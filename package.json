@@ -1,0 +1,15 @@
+{
+  "name": "elementor-mcp",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "bin": {
+    "elementor-mcp": "./src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.1",
+    "axios": "^1.8.4",
+    "axios-cookiejar-support": "^6.0.0",
+    "dotenv": "^16.5.0"
+  }
+}
