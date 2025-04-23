@@ -197,11 +197,11 @@ async function main() {
           .string()
           .optional()
           .describe(
-            "The path to the file to update the WordPress content from, optional."
+            "The absolute path to the file to update the WordPress content from, optional."
           ),
         elementorFilePath: z
           .string()
-          .describe("The path to the file to update the Elementor data from."),
+          .describe("The absolute path to the file to update the Elementor data from."),
       },
       async (input) => {
         const pageData = JSON.parse(
