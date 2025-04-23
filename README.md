@@ -1,5 +1,7 @@
 # Elementor MCP Server
 
+> We recommand you to use [this template project](https://github.com/aguaitech/Elementor_Project_Workflow) to manage your Elementor project.
+
 This is a simple MCP server for Elementor. It is used to perform CRUD operations on the Elementor data for a given page.
 
 ## Installation
