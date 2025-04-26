@@ -16,6 +16,11 @@ To install Elementor MCP Server for Claude Desktop automatically via [Smithery](
 npx -y @smithery/cli install @aguaitech/Elementor-MCP --client claude
 ```
 
+Or configure the MCP server in your `mcp.json` file. Note that the environment variables are required.
+* WP_URL: The URL of the target website.
+* WP_APP_USER: The username of the target website. Note: it's the username to log in to the target website, not the application name.
+* WP_APP_PASSWORD: The application password of the target website, keep the space. You can create one in the target website's WordPress dashboard, see [Generating Manually Section in this page](https://make.wordpress.org/core/2020/11/05/application-passwords-integration-guide/).
+
 ### MacOS / Linux
 
 ```json
