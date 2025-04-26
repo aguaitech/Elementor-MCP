@@ -1,0 +1,29 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - wpUrl
+      - wpAppUser
+      - wpAppPassword
+    properties:
+      wpUrl:
+        type: string
+        description: The URL of the target WordPress website.
+      wpAppUser:
+        type: string
+        description: The WordPress application username.
+      wpAppPassword:
+        type: string
+        description: The WordPress application password.
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'node', args: ['src/index.js'], env: { WP_URL: config.wpUrl, WP_APP_USER: config.wpAppUser, WP_APP_PASSWORD: config.wpAppPassword } })
+  exampleConfig:
+    wpUrl: https://example.com
+    wpAppUser: admin
+    wpAppPassword: AppPass_1234
