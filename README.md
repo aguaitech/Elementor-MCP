@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/aguaitech-elementor-mcp-badge.png)](https://mseep.ai/app/aguaitech-elementor-mcp)
+
 # Elementor MCP Server
 
 [![smithery badge](https://smithery.ai/badge/@aguaitech/Elementor-MCP)](https://smithery.ai/server/@aguaitech/Elementor-MCP)
